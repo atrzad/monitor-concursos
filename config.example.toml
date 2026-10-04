@@ -1,0 +1,17 @@
+# Copie para ~/.config/monitor-concursos/config.toml e preencha senha_app.
+
+[email]
+smtp_host = "smtp.gmail.com"
+smtp_port = 465
+usuario = "seu-email@gmail.com"
+# Senha de app do Gmail (16 letras), NÃO a senha normal da conta.
+# Gere em https://myaccount.google.com/apppasswords (exige verificação em 2 etapas).
+senha_app = ""
+para = ["seu-email@gmail.com"]
+
+# Um bloco [[monitor]] por concurso. "padrao" é uma regex aplicada ao título
+# do concurso e da notícia, em minúsculas e sem acentos.
+[[monitor]]
+nome = "Banco do Brasil — Escriturário"
+termos = ["Banco do Brasil", "escriturario banco do brasil"]
+padrao = "banco do brasil"
